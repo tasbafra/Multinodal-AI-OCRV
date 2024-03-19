@@ -24,3 +24,13 @@ if subprocess.CompletedProcess.returncode == 0:
 else:
     print('Convertation failed')
 # whisper
+use this link to install whisper -> https://github.com/openai/whisper
+or install archieve from the folder whisper
+# whisper example
+
+
+
+
+
+
+
