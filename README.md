@@ -9,13 +9,13 @@ import subprocess
 input_video = 'input_video.mp4'   - use your path to the video file
 output_audio = 'output_audio.mp3' -  use your path to the audio file
 
-# Команда ffmpeg для конвертации видео в аудио
+#Команда ffmpeg для конвертации видео в аудио
 command = ['ffmpeg', '-i', input_video, output_audio]
 
-# Выполнение команды с помощью subprocess
+#Выполнение команды с помощью subprocess
 subprocess.run(command, capture_output=True)
 
-# Проверка вывода и ошибок
+#Проверка вывода и ошибок
 if subprocess.CompletedProcess.returncode == 0:
     print('Convertation succeeded')
 else:
