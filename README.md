@@ -17,7 +17,7 @@ of zip archieve from the folder ffmpeg
      print('Convertation succeeded')
  else:
      print('Convertation failed')
-     ```
+```
 # whisper
 use this link to install whisper -> https://github.com/openai/whisper
 or install archieve from the folder whisper
