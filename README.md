@@ -45,6 +45,9 @@ text = transcribe_audio_to_text(audio_file_path)
 print(text)
 ```
 #similarity
+install sentence_transformers from this link -> https://github.com/UKPLab/sentence-transformers
+#similarity_example
+```
 
 
 
