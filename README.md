@@ -5,22 +5,22 @@ install ffmpeg from this link -> https://github.com/FFmpeg/FFmpeg
 of zip archieve from the folder ffmpeg
 # ffmpeg example
 ```
- import subproces
+import subprocesses
 
- input_video = 'input_video.mp4'  #- use your path to the video file
- output_audio = 'output_audio.mp3' #-  use your path to the audio file
+ input_video = 'input_video.mp4' #- use your path to the video file
+ output_audio = 'output_audio.mp3' #- use your path to the audio file
 
- #Команда ffmpeg для конвертации видео в аудио
+ #FFmpeg command to convert video to audio
  command = ['ffmpeg', '-i', input_video, output_audio]
 
- #Выполнение команды с помощью subprocess
+ #Execute a command using subprocess
  subprocess.run(command, capture_output=True)
 
- #Проверка вывода и ошибок
+ #Check output and errors
  if subprocess.CompletedProcess.returncode == 0:
-     print('Convertation succeeded')
+     print('Conversion succeeded')
  else:
-     print('Convertation failed')
+     print('Conversion failed')
 ```
 # whisper
 use this link to install whisper -> https://github.com/openai/whisper
@@ -30,19 +30,20 @@ or install archieve from the folder whisper
  import whisper
 
  def transcribe_audio_to_text(audio_path):
-     #Загружаем модель, 'small' можно заменить на tiny, medium, base, large в зависимости от требуемого качества и скорости
+     #Load the model, 'small' can be replaced with tiny, medium, base, large depending on the required quality and speed
     model = whisper.load_model("small")
 
-  #Выполняем транскрибирование аудиофайла
+  #Transcribe the audio file
     result = model.transcribe(audio_path)
 
-    #Возвращаем транскрибированный текст
+    #Returning the transcribed text
     return result['text']
 
-#Пример использования функции
-audio_file_path = "path/to/your/audio/file.mp3" #- путь к аудиофайлу
+#Example of using the function
+audio_file_path = "path/to/your/audio/file.mp3" #- path to the audio file
 text = transcribe_audio_to_text(audio_file_path)
 print(text)
+
 ```
 # similarity
 install sentence_transformers from this link -> https://github.com/UKPLab/sentence-transformers
@@ -73,6 +74,7 @@ input_command = transcribe_audio_with_whisper(audio_path)
 similarities = get_similarity(input_command, default_sentences)
 print(similarities)  # This will show a list of similarities with each default sentence
 ```
+# main_code
 
 
 
