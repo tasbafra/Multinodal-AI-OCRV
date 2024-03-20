@@ -75,7 +75,7 @@ similarities = get_similarity(input_command, default_sentences)
 print(similarities)  # This will show a list of similarities with each default sentence
 ```
 # main_code
-before starting the code, download mip_keypoints_model and 
+before starting the code, download mip_keypoints_model and pose_landmarker from the data folder
 ```
 import os
 
