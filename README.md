@@ -76,6 +76,7 @@ print(similarities)  # This will show a list of similarities with each default s
 ```
 # main_code
 before starting the code, download mip_keypoints_model and pose_landmarker from the data folder
+to start the web app open the link in the folder data
 ```
 import os
 
